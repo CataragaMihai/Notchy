@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<defs>
+  <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#141c72"/><stop offset=".45" stop-color="#080c4c"/><stop offset="1" stop-color="#03032a"/>
+  </linearGradient>
+  <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".22" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <clipPath id="clip"><rect x="100" y="100" width="824" height="824" rx="184"/></clipPath>
+  <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="9"/></filter>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>
+<rect x="100" y="110" width="824" height="824" rx="184" fill="#000" opacity=".35" filter="url(#shadow)"/>
+<g clip-path="url(#clip)">
+  <rect x="100" y="100" width="824" height="824" fill="url(#body)"/>
+  <rect x="100" y="100" width="824" height="824" fill="url(#gloss)"/>
+  <rect x="100" y="100" width="824" height="824" rx="184" fill="none" stroke="#7a4dff" stroke-width="22" opacity=".55" filter="url(#soft)"/>
+  <path d="M196.408 58.8V100Q233.488 100 233.488 137.08V478.216A185.4 185.4 0 0 0 418.888 663.616H605.112A185.4 185.4 0 0 0 790.512 478.216V137.08Q790.512 100 827.592 100V58.8Z" fill="none" stroke="#7a4dff" stroke-width="16" opacity=".8" filter="url(#soft)"/>
+  <path d="M196.408 58.8V100Q233.488 100 233.488 137.08V478.216A185.4 185.4 0 0 0 418.888 663.616H605.112A185.4 185.4 0 0 0 790.512 478.216V137.08Q790.512 100 827.592 100V58.8Z" fill="#050509" stroke="#7a4dff" stroke-width="2.5" stroke-opacity=".7"/>
+  <g fill="#f6f6fa"><path d="M380.16 298.378A25.338 25.338 0 0 1 430.836 298.378V319.967A25.338 25.338 0 0 1 380.16 319.967Z"/><path d="M593.164 298.378A25.338 25.338 0 0 1 643.84 298.378V319.967A25.338 25.338 0 0 1 593.164 319.967Z"/><path d="M490.37 299.408A21.63 21.63 0 0 1 533.63 299.408V384.28A50.47 50.47 0 0 1 483.16 434.75H479.04A21.63 21.63 0 0 1 479.04 391.49H483.16A7.21 7.21 0 0 0 490.37 384.28Z"/><path d="M402.092 479.311A147.423 147.423 0 0 0 621.908 479.311A21.424 21.424 0 0 0 589.964 450.753A104.575 104.575 0 0 1 434.036 450.753A21.424 21.424 0 0 0 402.092 479.311Z"/></g>
+</g>
+<rect x="101.5" y="101.5" width="821" height="821" rx="182.5" fill="none" stroke="#7a4dff" stroke-width="3"/>
+</svg>

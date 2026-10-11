@@ -1,0 +1,42 @@
+name: Notchy
+options:
+  deploymentTarget:
+    macOS: "26.0"
+  createIntermediateGroups: true
+packages:
+  NotchyCore:
+    path: NotchyCore
+  KeyboardShortcuts:
+    url: https://github.com/sindresorhus/KeyboardShortcuts
+    from: "3.1.0"
+  SwiftTerm:
+    url: https://github.com/migueldeicaza/SwiftTerm
+    exactVersion: "1.11.2"
+targets:
+  Notchy:
+    type: application
+    platform: macOS
+    sources:
+      - Notchy
+    configFiles:
+      Debug: Config/Base.xcconfig
+      Release: Config/Base.xcconfig
+    dependencies:
+      - package: NotchyCore
+      - package: KeyboardShortcuts
+      - package: SwiftTerm
+    info:
+      path: Notchy/Info.plist
+      properties:
+        CFBundleDisplayName: Notchy
+        CFBundleShortVersionString: "1.0.0"
+        CFBundleVersion: "1"
+        LSUIElement: false
+        LSMinimumSystemVersion: "26.0"
+schemes:
+  Notchy:
+    build:
+      targets:
+        Notchy: all
+    run:
+      config: Debug

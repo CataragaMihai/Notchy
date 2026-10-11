@@ -1,0 +1,9 @@
+// Shared build settings. The team ID comes from the gitignored Local.xcconfig.
+CODE_SIGN_STYLE = Automatic
+CODE_SIGN_IDENTITY = Apple Development
+ENABLE_HARDENED_RUNTIME = YES
+PRODUCT_BUNDLE_IDENTIFIER = com.mihai.notchy
+MACOSX_DEPLOYMENT_TARGET = 26.0
+SWIFT_VERSION = 6.0
+
+#include? "../Local.xcconfig"
